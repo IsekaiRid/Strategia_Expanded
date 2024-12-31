@@ -8,7 +8,6 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
-import utility.CustomDialog;
 
 public class ExampleJavaMod extends Mod {
 
@@ -29,10 +28,6 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.image(Core.atlas.find("icon-small")).pad(20f).row();
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
                 dialog.show();
-
-                // Menampilkan dialog kedua menggunakan CustomDialog
-                CustomDialog customDialog = new CustomDialog("Custom Dialog");
-                customDialog.show();
             });
         });
     }
