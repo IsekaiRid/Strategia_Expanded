@@ -1,11 +1,11 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Strategia Expanded"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "strategia-expanded"
 
 #your name
-author: "You"
+author: "DarkGroundFire"
 
 #the fully qualified main class of the mod
 main: "example.ExampleJavaMod"
