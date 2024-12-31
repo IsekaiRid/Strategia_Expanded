@@ -8,6 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import utility.CustomDialog;
 
 public class ExampleJavaMod extends Mod {
 
@@ -22,10 +23,13 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.add("Halo, saya Komando.").row();
                 dialog.cont.add("Garis pertahanan pertama bumi.").row();
                 dialog.cont.add("Salam kenal, mari kita bertahan dari ambang kehancuran.").row();
+
                 // Menampilkan gambar (ganti 'example-java-mod-icon' dengan sprite Anda)
                 dialog.cont.image(Core.atlas.find("example-java-mod-icon")).pad(20f).row();
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
                 dialog.show();
+                CustomDialog customDialog = new CustomDialog("Custom Dialog");
+                customDialog.show();
             });
         });
     }
