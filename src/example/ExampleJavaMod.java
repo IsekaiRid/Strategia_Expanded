@@ -18,7 +18,7 @@ public class ExampleJavaMod extends Mod {
         Events.on(ClientLoadEvent.class, e -> {
             // Menampilkan dialog setelah startup
             Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("Komando");
+                BaseDialog dialog = new BaseDialog("anime");
                 dialog.cont.add("Halo, saya Komando.").row();
                 dialog.cont.add("Garis pertahanan pertama bumi.").row();
                 dialog.cont.add("Salam kenal, mari kita bertahan dari ambang kehancuran.").row();
