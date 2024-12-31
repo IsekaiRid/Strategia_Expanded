@@ -1,13 +1,14 @@
 package utility;
 
-import arc.scene.ui.Dialog;
-import arc.scene.ui.Label;
-import arc.scene.ui.TextButton;
-import arc.scene.ui.layout.Table;
-import arc.scene.style.LabelStyle;
-import arc.graphics.g2d.BitmapFont;
-import arc.graphics.g2d.Font;
-import arc.Core;
+import arc.*;
+import arc.scene.style.*;
+import arc.scene.ui.*;
+import arc.util.*;
+import mindustry.game.*;
+import mindustry.gen.*;
+import mindustry.graphics.*;
+import mindustry.ui.*;
+import mindustry.ui.dialogs.*;
 
 public class CustomDialog extends Dialog {
 
@@ -21,7 +22,7 @@ public class CustomDialog extends Dialog {
         this.setMovable(true); // Membuat dialog bisa digeser
         this.setModal(true);   // Membuat dialog sebagai modal
 
-        // Membuat font dari default font yang ada
+        // Membuat font dari default font yang ada di Mindustry
         BitmapFont font = Core.font;  // Menggunakan font default dari Core
 
         // Membuat LabelStyle dengan font yang sudah ditentukan
