@@ -19,15 +19,18 @@ public class ExampleJavaMod extends Mod {
         Events.on(ClientLoadEvent.class, e -> {
             // Menampilkan dialog setelah startup
             Time.runTask(10f, () -> {
+                // Menampilkan dialog pertama menggunakan BaseDialog
                 BaseDialog dialog = new BaseDialog("anime");
                 dialog.cont.add("Halo, saya Komando.").row();
                 dialog.cont.add("Garis pertahanan pertama bumi.").row();
                 dialog.cont.add("Salam kenal, mari kita bertahan dari ambang kehancuran.").row();
 
-                // Menampilkan gambar (ganti 'example-java-mod-icon' dengan sprite Anda)
-                dialog.cont.image(Core.atlas.find("example-java-mod-icon")).pad(20f).row();
+                // Menampilkan gambar (gunakan sprite yang ada atau sesuaikan)
+                dialog.cont.image(Core.atlas.find("icon-small")).pad(20f).row();
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
                 dialog.show();
+
+                // Menampilkan dialog kedua menggunakan CustomDialog
                 CustomDialog customDialog = new CustomDialog("Custom Dialog");
                 customDialog.show();
             });
