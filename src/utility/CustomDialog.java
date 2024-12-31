@@ -1,10 +1,9 @@
-package utility ;
+package utility;
 
 import arc.scene.ui.Dialog;
 import arc.scene.ui.layout.Table;
 import arc.scene.ui.Label;
 import arc.scene.ui.TextButton;
-import arc.scene.event.Touchable;
 
 public class CustomDialog extends Dialog {
 
@@ -17,7 +16,6 @@ public class CustomDialog extends Dialog {
         // Mengatur properti dasar
         this.setMovable(true); // Membuat dialog bisa digeser
         this.setModal(true);   // Membuat dialog sebagai modal
-        this.setTouchable(Touchable.enabled); // Mengaktifkan interaksi
 
         // Menambahkan konten ke dialog
         cont.add(new Label("This is a custom dialog!")).row(); // Tambahkan label
