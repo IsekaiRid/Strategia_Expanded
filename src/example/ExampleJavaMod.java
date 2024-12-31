@@ -25,7 +25,7 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.add("Salam kenal, mari kita bertahan dari ambang kehancuran.").row();
 
                 // Menampilkan gambar (gunakan sprite yang ada atau sesuaikan)
-                dialog.cont.image(Core.atlas.find("icon-small")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("anime")).pad(20f).row();
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
