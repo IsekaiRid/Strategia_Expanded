@@ -29,7 +29,7 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.button("Repo saya", () -> Core.app.openURI("https://github.com/IsekaiRid/Strategia_Expanded")).size(200f, 50f).row();
 
                 // Menampilkan gambar (gunakan sprite yang ada atau sesuaikan)
-                dialog.cont.image(Core.atlas.find("anime")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("xample-java-mod-anime")).pad(20f).row();
 
                 // Menambahkan tombol untuk menutup dialog
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
