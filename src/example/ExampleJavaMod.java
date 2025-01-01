@@ -29,6 +29,26 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.button("Oke", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
+
+            private static void showAbout(){
+		if(links == null)links = new Links.LinkEntry[]{
+			new Links.LinkEntry("mod.ccs", "https://github.com/Yuria-Shikibe/NewHorizonMod/wiki/Cutscene-Script-Custom-Guide", Icon.settings, Pal.heal),
+			new Links.LinkEntry("mod.discord", "https://discord.gg/yNmbMcuwyW", Icon.discord, Color.valueOf("7289da")),
+			new Links.LinkEntry("mod.github", MOD_GITHUB_URL, Icon.github, Color.valueOf("24292e")),
+			new Links.LinkEntry("mod.guide", "https://github.com/Yuria-Shikibe/NewHorizonMod#mod-guide", Icon.bookOpen, Pal.accent),
+			new Links.LinkEntry("yuria.plugin", "https://github.com/Yuria-Shikibe/RangeImager", Icon.export, NHColor.thurmixRed)
+		};
+
+		BaseDialog dialog = new BaseDialog("@links");
+		dialog.cont.pane(table -> {
+			for(Links.LinkEntry entry : links){
+				TableFunc.link(table, entry);
+			}
+		}).grow().row();
+		dialog.cont.button("@back", Icon.left, Styles.cleart, dialog::hide).size(LEN * 4, LEN);
+		dialog.addCloseListener();
+		dialog.show();
+	}
         });
     }
 
