@@ -26,7 +26,7 @@ public class ExampleJavaMod extends Mod {
                 dialog.cont.add("Salam kenal, mari kita bertahan dari ambang kehancuran.").row();
 
                 // Menampilkan gambar (gunakan sprite yang ada atau sesuaikan)
-                dialog.cont.image(Core.atlas.find("example-java-mod-anime")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("strategia-expanded-anime")).pad(20f).row();
                 dialog.cont.button("Repo saya", () -> Core.app.openURI("https://github.com/IsekaiRid/Strategia_Expanded")).size(200f, 50f).row();
 
                 // Menambahkan tombol untuk menutup dialog
